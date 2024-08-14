@@ -25,4 +25,23 @@ open class User {
 
     @Column(name = "credit_card")
     open var creditCard: String? = null
+
+    constructor(){
+    }
+
+    constructor(
+        _id: UUID,
+        _name: String,
+        _username: String,
+        _email: String,
+        _gender: String,
+        _creditCard: String
+    ){
+        id = _id
+        name = _name
+        username = _username
+        email = _email
+        gender = _gender
+        creditCard = _creditCard
+    }
 }
