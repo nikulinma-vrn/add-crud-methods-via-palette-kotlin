@@ -20,12 +20,6 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/rest/v2")
 class UserResource2(private val userRepository: UserRepository) {
-    @GetMapping
-    fun getList(@ModelAttribute filter: UserFilter?, pageable: Pageable): Page<User> {
-        val spec: Specification<User>? = filter?.toSpecification()
-        return userRepository.findAll(spec, pageable)
-    }
-
 
 }
 
