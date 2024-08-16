@@ -5,6 +5,7 @@
       <map>
         <entry key="dto" value="com.example.smoke_giga_241.dto.UserDto" />
         <entry key="repository" value="com.example.smoke_giga_241.repository.UserRepository" />
+        <entry key="serviceProxy" value="com.example.smoke_giga_241.service.UserServiceImpl" />
       </map>
     </option>
   </component>
