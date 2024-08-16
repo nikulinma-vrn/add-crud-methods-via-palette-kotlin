@@ -7,8 +7,8 @@ import org.springframework.data.domain.Pageable
 import org.springframework.data.jpa.domain.Specification
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ModelAttribute
-import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
 /*
  * ToDo: Amplicode Designer -> Request Handling -> Get All
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 @RequestMapping("/rest/v2")
 class UserResource2(private val userRepository: UserRepository) {
     @GetMapping
-    fun getList(@ModelAttribute filter: UserFilter1?, pageable: Pageable): Page<User> {
+    fun getList(@ModelAttribute filter: UserFilter?, pageable: Pageable): Page<User> {
         val spec: Specification<User>? = filter?.toSpecification()
         return userRepository.findAll(spec, pageable)
     }
