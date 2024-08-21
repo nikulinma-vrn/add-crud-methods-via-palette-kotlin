@@ -43,8 +43,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/rest/v3")
-class UserResource3(private val userRepository: UserRepository, private val userMapper: UserMapper,
-                    private val objectMapper: ObjectMapper
+class UserController3(private val userRepository: UserRepository, private val userMapper: UserMapper,
+                      private val objectMapper: ObjectMapper
 ) {
 
 }

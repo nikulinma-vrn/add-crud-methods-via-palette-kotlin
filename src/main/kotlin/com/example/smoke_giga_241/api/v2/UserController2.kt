@@ -1,12 +1,6 @@
 package com.example.smoke_giga_241.api.v2
 
-import com.example.smoke_giga_241.entity.User
 import com.example.smoke_giga_241.repository.UserRepository
-import org.springframework.data.domain.Page
-import org.springframework.data.domain.Pageable
-import org.springframework.data.jpa.domain.Specification
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.ModelAttribute
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -19,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/rest/v2")
-class UserResource2(private val userRepository: UserRepository) {
+class UserController2(private val userRepository: UserRepository) {
 
 }
 

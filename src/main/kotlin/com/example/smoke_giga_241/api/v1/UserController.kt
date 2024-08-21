@@ -1,62 +1,61 @@
-package com.example.smoke_giga_241.api.v4
+package com.example.smoke_giga_241.api.v1
 
-import com.example.smoke_giga_241.service.UserService
+import com.example.smoke_giga_241.repository.UserRepository
+import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 /*
  * ToDo: Amplicode Designer -> Request Handling -> Get All
- *       DTO class: UserDto
- *       Pagination: ON
- *       List filter: UserFilter
- *       Proxy service: UserServiceImpl
+ *       DTO class: User
+ *       Proxy service: None
+ *       Pagination: OFF
  *
  * ToDo: Amplicode Designer -> Request Handling -> Get One
- *       DTO class: UserDto
+ *       DTO class: User
+ *       Proxy service: None
  *       Resource path: /{id}
- *       Proxy service: UserServiceImpl
  *
  * ToDo: Amplicode Designer -> Request Handling -> Get Many
- *       DTO class: UserDto
+ *       DTO class: User
+ *       Proxy service: None
  *       Resource path: /by-ids
- *       Proxy service: UserServiceImpl
  *
  * ToDo: Amplicode Designer -> Request Handling -> Create One
- *       DTO class: UserDto
- *       Proxy service: UserServiceImpl
+ *       DTO class: User
+ *       Proxy service: None
  *
  * ToDo: Amplicode Designer -> Request Handling -> Create Many
- *       DTO class: UserDto
+ *       DTO class: User
  *       Resource path: /bulk
- *       Proxy service: UserServiceImpl
+ *       Proxy service: None
  *
  * ToDo: Amplicode Designer -> Request Handling -> Path One
- *       DTO class: UserDto
+ *       DTO class: User
  *       Resource path: /{id}
- *       Proxy service: UserServiceImpl
+ *       Proxy service: None
  *
  * ToDo: Amplicode Designer -> Request Handling -> Path Many
- *       DTO class: UserDto
- *       Proxy service: UserServiceImpl
+ *       DTO class: User
+ *       Proxy service: None
  *
  * ToDo: Amplicode Designer -> Request Handling -> Delete One
- *       DTO class: UserDto
+ *       DTO class: User
  *       Resource path: /{id}
- *       Proxy service: UserServiceImpl
+ *       Proxy service: None
  *
  * ToDo: Amplicode Designer -> Request Handling -> Delete Many
- *       Proxy service: UserServiceImpl
+ *        Proxy service: None
  *
  * ToDo: Amplicode Designer -> Request Handling -> Update One
- *       DTO class: UserDto
+ *       DTO class: User
  *       Resource path: /{id}
- *       Proxy service: UserServiceImpl
+ *       Proxy service: None
  *
  */
 
 @RestController
-@RequestMapping("/rest/v4")
-class UserResource4(private val userService: UserService) {
+@RequestMapping("/rest/v1")
+class UserController(private val userRepository: UserRepository, private val objectMapper: ObjectMapper) {
 
 }
-
